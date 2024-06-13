@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src='main.js'></script>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-size: cover;
+            background-image: url(images/bg.jpg);
+            transition: 2s ease all;
+        }
+        .box{
+            font-family: 'Times New Roman', Times, serif;
+            width: 15%;
+            height: 80px;
+            margin-top: 30%;
+            margin-bottom: 15%;
+            margin-left: 20%;
+            padding: 25px;
+            background-color: rgb(9, 9, 72);
+            color: lightskyblue;
+            border: solid 8px whitesmoke;
+            transition: 2s ease all;
+        }
+        .content{
+            text-align: center;
+            color: white;
+            margin-top: 15%;
+            letter-spacing: 1px;
+        }
+        .content h1{
+            font-size: 45px;
+            color: rgb(67, 67, 139) ;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="content">
+            <h1>AOS</h1>
+            <br>
+            <h2>Animate On Scroll Library <div data-aos="fade-down"></div>
+            </h2>
+        </div>
+    </section>
+    <div class="box" data-aos="fade-down" animation-duration: 2000ms >data-aos="fade-down"</div>
+    <div class="box" data-aos="flip-left">data-aos="flip-left"</div>  
+    <div class="box" data-aos="fade-right">data-aos="fade-right"</div> 
+    <div class="box" data-aos="zoom-in">data-aos="zoom-in"</div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
