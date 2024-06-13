@@ -1,0 +1,24 @@
+<!--
+    // onload():
+    Execute a JavaScript immediately after a page has been loaded
+
+    
+    // onunload():
+    The onunload event occurs once a page has unloaded (or the browser window has been closed).
+
+    onunload occurs when the user navigates away from the page (by clicking on a link, submitting a form, closing the browser window, etc.).
+-->
+<script>
+    // onload()
+    window.onload = function() {
+        let div = document.getElementById('myDiv');
+        div.style.color = 'red';
+    };
+
+    // onunload() 
+    window.onunload = function() {
+        let div = document.getElementById('myDiv');
+        div.style.color = 'red';
+    };
+
+</script>

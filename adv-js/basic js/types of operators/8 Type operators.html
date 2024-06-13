@@ -1,0 +1,29 @@
+<!-- 1. typeof: This operator returns a string indicating the type of the operand. -->
+
+<script>
+    console.log(typeof 42);          // Output: "number"
+    console.log(typeof "hello");     // Output: "string"
+    console.log(typeof true);        // Output: "boolean"
+    console.log(typeof undefined);   // Output: "undefined"
+    console.log(typeof null);        // Output: "object" (typeof null is an artifact in JavaScript, it's not exactly accurate)
+    console.log(typeof {});          // Output: "object"
+    console.log(typeof []);          // Output: "object"
+    console.log(typeof function(){});// Output: "function"
+
+    
+// 2. instanceof: This operator checks whether an object is an instance of a particular class or constructor function.
+
+    var arr = [];
+     console.log(arr instanceof Array);       // Output: true
+     console.log(arr instanceof Object);      // Output: true, since arrays are objects in JavaScript
+     console.log(arr instanceof Function);    // Output: false, arrays are not functions
+
+    function Person(name) {
+        this.name = name;
+    }
+    var person = new Person("John");
+    console.log(person instanceof Person);   // Output: true
+
+</script>
+
+<!-- These operators are helpful for checking the type of values or objects in JavaScript, which can be useful for debugging, handling different cases in code, or performing type-specific operations. -->

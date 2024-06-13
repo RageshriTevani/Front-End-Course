@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmX2ifb5A1JPGilrLKcZXn0g-jMwhMnlHFrA&s" id="imgg" style="width:250px; height: 250px;" onmouseover="displ2()" onmouseout="displ1()">
+
+    <script>
+        function displ1()
+        {
+            document.getElementById("imgg").src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmmfPJD8dN7oW5q7GZdjxBHp5DxdwIGs7SA&s';
+        }
+
+        function displ2()
+        {
+            document.getElementById("imgg").src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtX8gqVU35OtW5wEhpdKrsKcL3Sq-qefTBg&s';
+        }
+    </script>
+    
+</body>
+</html>
