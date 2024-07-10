@@ -1,0 +1,73 @@
+<!-- 
+    Mouse events in JavaScript are events that are related to user interactions with the mouse. These events can be used to detect when the user moves the mouse, clicks a button, or hovers over an element, among other things.
+-->
+
+
+<!-- onmousemove : The mouse pointer moves over an element -->
+<script>
+
+    element.addEventListener('mousemove', function(event) 
+    {
+    console.log('Mouse is moved to (' + event.clientX + ', ' + event.clientY + ')');
+    });
+
+</script>
+
+
+
+<!-- onmouseout :  The mouse is no longer over the element -->
+<script>
+
+    element.addEventListener('mouseout', function() 
+    {
+    console.log('Mouse is no longer over the element');
+    });
+
+</script>
+
+
+
+<!-- onmouseover:
+    When the mouse is over the element -->
+    <script>
+
+        element.addEventListener('mouseover', function() 
+        {
+        console.log('Mouse is over the element');
+        });
+
+    </script>
+
+
+<!-- onclick:
+    The mouse button is clicked
+-->
+<script>
+    element.addEventListener('click', function() 
+    {
+    console.log('Mouse button is clicked');
+    });
+</script>
+
+
+
+<!-- onmouseup:
+    The mouse button is released -->
+<script>
+    element.addEventListener('mouseup', function() 
+    {
+    console.log('Mouse button is released');
+    });
+</script>
+
+
+<!-- onmousedown:
+    The mouse button is pressed  -->
+<script>
+
+    element.addEventListener('mousedown', function() 
+    {
+    console.log('Mouse button is pressed');
+    });
+
+</script>
